@@ -9,6 +9,7 @@ credentials: Should be available in a credentials file - ~/.aws/credentials on M
 <p>
 settings.js: the following parameters can be added
 <ul>
+<li>awsS3Endpoint: optional name of S3 endpoint to use</li>
 <li>awsRegion: optional region such as eu-west-1</li>
 <li>awsS3Appname: optional name of application</li>
 <li>awsS3Bucket: optional name of S3 bucket to use</li>
@@ -19,6 +20,7 @@ settings.js: the following parameters can be added
 default settings for optional configuration:
 <ul>
 <li>awsRegion: 'eu-west-1'</li>
+<li>awsS3Endpoint: 's3.<awsRegion>.amazonaws.com'</li>
 <li>awsS3Bucket: user display name + '-node-red'</li>
 <li>awsS3Appname: aws instance name</li>
 </ul>
